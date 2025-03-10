@@ -7,3 +7,9 @@ repos:
       - id: end-of-file-fixer # Ensures files end with a newline.
       - id: trailing-whitespace # Removes trailing whitespace from files.
       - id: check-added-large-files # Checks that no large files (>500kb by default) have been committed.
+
+  - repo: https://github.com/psf/black
+    rev: stable
+    hooks:
+      - id: black
+        language_version: python3.10
